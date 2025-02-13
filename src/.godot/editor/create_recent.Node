@@ -1,0 +1,6 @@
+Camera2D
+TileMap
+CollisionShape2D
+StaticBody2D
+CharacterBody2D
+AnimatedSprite2D

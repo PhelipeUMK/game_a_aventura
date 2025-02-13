@@ -1,0 +1,50 @@
+[gd_scene load_steps=7 format=3 uid="uid://xwk88owmeng3"]
+
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_mydkl"]
+[ext_resource type="Texture2D" uid="uid://bmtw4nowpemta" path="res://assets/Sprite Pack 4/1 - Agent_Mike_Idle (32 x 32).png" id="2_rb21o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u8hqt"]
+size = Vector2(12, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_33w5d"]
+atlas = ExtResource("2_rb21o")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ilrft"]
+atlas = ExtResource("2_rb21o")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_un632"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_33w5d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ilrft")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="player" type="CharacterBody2D"]
+position = Vector2(3, 0)
+collision_mask = 2
+script = ExtResource("1_mydkl")
+
+[node name="collision" type="CollisionShape2D" parent="."]
+position = Vector2(1, -8)
+shape = SubResource("RectangleShape2D_u8hqt")
+
+[node name="animation" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, -16)
+scale = Vector2(1, 0.96875)
+sprite_frames = SubResource("SpriteFrames_un632")
+autoplay = "default"
+frame_progress = 0.364984
+
+[node name="Camera2D" type="Camera2D" parent="."]
+limit_left = -100
+limit_bottom = 320
+editor_draw_limits = true
