@@ -1,7 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1739453024
+::res://::1739661349
 icon.svg::CompressedTexture2D::8047362476794067328::1739359535::1739359544::1::::<><>::
-world_1_1.tscn::PackedScene::5134441168021570034::1739379016::0::1::::<><>::res://scripts/player.gd<>uid://ckltfwjimx4p7::::res://assets/Seasonal Tilesets/3 - Tropics/Terrain (16 x 16).png<>uid://bmtw4nowpemta::::res://assets/Sprite Pack 4/1 - Agent_Mike_Idle (32 x 32).png<>uid://dmi632j51rof4::::res://assets/Seasonal Tilesets/3 - Tropics/Tropics_entities (16 x 16).png
+world_1_1.tscn::PackedScene::5134441168021570034::1739457009::0::1::::<><>::uid://ckltfwjimx4p7::::res://assets/Seasonal Tilesets/3 - Tropics/Terrain (16 x 16).png<>uid://dmi632j51rof4::::res://assets/Seasonal Tilesets/3 - Tropics/Tropics_entities (16 x 16).png<>uid://xwk88owmeng3::::res://actors/player.tscn
+::res://actors/::1739457009
+player.tscn::PackedScene::1660427571304190524::1739457009::0::1::::<><>::res://scripts/player.gd<>uid://bmtw4nowpemta::::res://assets/Sprite Pack 4/1 - Agent_Mike_Idle (32 x 32).png
 ::res://assets/::1739363755
 ::res://assets/Mini FX, Items & UI/::1739363755
 LICENSE.txt::TextFile::-1::1593868726::0::1::::<><>::
