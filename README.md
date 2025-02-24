@@ -1,6 +1,9 @@
 # A Aventura Mais Legal
 Jogo 2D de ação e plataforma feito utilizando a engine Godot.
 
+## Atenção!
+Tanto o arquivo .exe quanto o o arquivo .pck devem estar na mesma pasta para o jogo executar corretamente.
+
 ## Documentação 📚
 
 ### Sobre o Projeto
