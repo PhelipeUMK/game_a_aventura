@@ -1,9 +1,15 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1739661349
+::res://::1741089777
+bullet.tscn::PackedScene::3072776323118060348::1741041755::0::1::::<><>::res://scripts/bullet.gd<>uid://cuyq5nqx38wjd::::res://assets/Sprite Pack 4/1 - Agent_Mike_Bullet (16 x 16).png
+export_presets.cfg::TextFile::-1::1740416466::0::1::::<><>::
+hitbox.tscn::PackedScene::5810358284178663836::1741041754::0::1::::<><>::res://scripts/hitbox.gd
+hurt.res::Animation::9130983352076629786::1741026938::0::1::::<><>::uid://bggnsgj5pk61g::::res://assets/Sprite Pack 4/5 - Robot_Walky_Hurt (32 x 32).png
 icon.svg::CompressedTexture2D::8047362476794067328::1739359535::1739359544::1::::<><>::
-world_1_1.tscn::PackedScene::5134441168021570034::1739457009::0::1::::<><>::uid://ckltfwjimx4p7::::res://assets/Seasonal Tilesets/3 - Tropics/Terrain (16 x 16).png<>uid://dmi632j51rof4::::res://assets/Seasonal Tilesets/3 - Tropics/Tropics_entities (16 x 16).png<>uid://xwk88owmeng3::::res://actors/player.tscn
-::res://actors/::1739457009
-player.tscn::PackedScene::1660427571304190524::1739457009::0::1::::<><>::res://scripts/player.gd<>uid://bmtw4nowpemta::::res://assets/Sprite Pack 4/1 - Agent_Mike_Idle (32 x 32).png
+idle.res::Animation::2306697667315467600::1741026938::0::1::::<><>::uid://bbfis21va2eqb::::res://assets/Sprite Pack 4/5 - Robot_Walky_Idle (32 x 32).png
+world_1_1.tscn::PackedScene::5134441168021570034::1741041754::0::1::::<><>::uid://ckltfwjimx4p7::::res://assets/Seasonal Tilesets/3 - Tropics/Terrain (16 x 16).png<>uid://dmi632j51rof4::::res://assets/Seasonal Tilesets/3 - Tropics/Tropics_entities (16 x 16).png<>uid://xwk88owmeng3::::res://actors/player.tscn<>uid://qfgogwenuc5u::::res://actors/enemy_1.tscn
+::res://actors/::1741041785
+enemy_1.tscn::PackedScene::1133733039375785864::1741041754::0::1::::<><>::uid://bbfis21va2eqb::::res://assets/Sprite Pack 4/5 - Robot_Walky_Idle (32 x 32).png<>res://scripts/enemy_1.gd<>uid://dqk2djicgcpgu::::res://assets/Sprite Pack 4/5 - Robot_Walky_Movement (32 x 32).png<>uid://bggnsgj5pk61g::::res://assets/Sprite Pack 4/5 - Robot_Walky_Hurt (32 x 32).png<>uid://co1t0tmbnd7pw::::res://hitbox.tscn
+player.tscn::PackedScene::1660427571304190524::1741041785::0::1::::<><>::res://scripts/player.gd<>uid://bmtw4nowpemta::::res://assets/Sprite Pack 4/1 - Agent_Mike_Idle (32 x 32).png<>uid://b7bgxxhd7xfjm::::res://assets/Sprite Pack 4/1 - Agent_Mike_Jump_&_Falling (32 x 32).png<>uid://ff6mbok1d8qi::::res://assets/Sprite Pack 4/1 - Agent_Mike_Running (32 x 32).png
 ::res://assets/::1739363755
 ::res://assets/Mini FX, Items & UI/::1739363755
 LICENSE.txt::TextFile::-1::1593868726::0::1::::<><>::
@@ -124,5 +130,8 @@ Water_frames (16 x 32).png::CompressedTexture2D::6791899263641324042::1594736418
 10 - Blankey_Floating (32 x 32).png::CompressedTexture2D::981752320486093124::1592844390::1739360035::1::::<><>::
 10 - Blankey_Hurt (32 x 32).png::CompressedTexture2D::4987998047013334880::1592844438::1739360035::1::::<><>::
 LICENSE.txt::TextFile::-1::1593868726::0::1::::<><>::
-::res://scripts/::1739360306
-player.gd::GDScript::-1::1739360306::0::1::::<>CharacterBody2D<>::
+::res://scripts/::1741040105
+bullet.gd::GDScript::-1::1741031224::0::1::::<>Area2D<>::
+enemy_1.gd::GDScript::-1::1741026826::0::1::::<>CharacterBody2D<>::
+hitbox.gd::GDScript::-1::1741028818::0::1::::<>Area2D<>::
+player.gd::GDScript::-1::1741040105::0::1::::<>CharacterBody2D<>::

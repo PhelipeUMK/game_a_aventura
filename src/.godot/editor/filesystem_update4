@@ -1,3 +1,8 @@
 res://actors/player.tscn
-res://world_1_1.tscn
 res://scripts/player.gd
+res://world_1_1.tscn
+res://actors/enemy_1.tscn
+res://hitbox.tscn
+res://bullet.tscn
+res://scripts/bullet.gd
+res://scripts/enemy_1.gd

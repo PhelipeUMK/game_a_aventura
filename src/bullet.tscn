@@ -1,0 +1,36 @@
+[gd_scene load_steps=5 format=3 uid="uid://bj1qgay42klwe"]
+
+[ext_resource type="Script" path="res://scripts/bullet.gd" id="1_ahw6j"]
+[ext_resource type="Texture2D" uid="uid://cuyq5nqx38wjd" path="res://assets/Sprite Pack 4/1 - Agent_Mike_Bullet (16 x 16).png" id="2_0g8rj"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u42le"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_0g8rj")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_tcn67"]
+radius = 2.0
+height = 8.0
+
+[node name="bullet" type="Area2D" groups=["bullets"]]
+script = ExtResource("1_ahw6j")
+
+[node name="anim" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_u42le")
+autoplay = "default"
+
+[node name="collision" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 1)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_tcn67")
+
+[node name="VisibleOnScreenEnabler2D" type="VisibleOnScreenEnabler2D" parent="."]
+scale = Vector2(1, 0.55)
+
+[connection signal="screen_exited" from="VisibleOnScreenEnabler2D" to="." method="_on_visible_on_screen_enabler_2d_screen_exited"]

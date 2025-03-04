@@ -1,0 +1,5 @@
+res://actors/player.tscn::15f7e469d5ae397c8b1299d8f73691e5::1741094151::res://.godot/exported/133200997/export-e86f95e5088e93066d258d9192ab0748-player.scn
+res://world_1_1.tscn::37225aac89092321caae6a23591a9835::1741094151::res://.godot/exported/133200997/export-257a04784fa964d3183c120e2d367d5a-world_1_1.scn
+res://actors/enemy_1.tscn::985ef9eefd964e3f8864e03ab93d092d::1741094151::res://.godot/exported/133200997/export-09935982563c2eb6e891205cd2aebe0e-enemy_1.scn
+res://bullet.tscn::c0b58021ba76ff1ed65ea4b2f210f284::1741094151::res://.godot/exported/133200997/export-6350fccf6e14d2f0c891730ee1d2c6cd-bullet.scn
+res://hitbox.tscn::56ac67fbb8e0644f94232f9f008eb8e5::1741094151::res://.godot/exported/133200997/export-1eaf479f878ae19a6f7f3fc6a72c8da0-hitbox.scn

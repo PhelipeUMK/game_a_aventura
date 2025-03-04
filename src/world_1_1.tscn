@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://cfffq4ikn7ttq"]
+[gd_scene load_steps=8 format=3 uid="uid://cfffq4ikn7ttq"]
 
 [ext_resource type="Texture2D" uid="uid://ckltfwjimx4p7" path="res://assets/Seasonal Tilesets/3 - Tropics/Terrain (16 x 16).png" id="1_y0cjx"]
 [ext_resource type="Texture2D" uid="uid://dmi632j51rof4" path="res://assets/Seasonal Tilesets/3 - Tropics/Tropics_entities (16 x 16).png" id="2_hlk8t"]
 [ext_resource type="PackedScene" uid="uid://xwk88owmeng3" path="res://actors/player.tscn" id="3_p3dpm"]
+[ext_resource type="PackedScene" uid="uid://qfgogwenuc5u" path="res://actors/enemy_1.tscn" id="4_3uwgg"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6y4f7"]
 texture = ExtResource("1_y0cjx")
@@ -119,4 +120,8 @@ layer_1/name = "decoration"
 layer_1/tile_data = PackedInt32Array(917511, 65537, 1, 524320, 65537, 1, 524337, 393217, 3, 524338, 393217, 3, 524339, 393217, 3, 524340, 393217, 3, 524341, 393217, 3, 524342, 393217, 3, 524343, 393217, 3, 524344, 393217, 3, 524345, 393217, 3, 524346, 393217, 3, 524336, 327681, 3, 524347, 458753, 3, 458808, 65537, 1, 589865, 589825, 3, 524349, 589825, 3)
 
 [node name="player" parent="." instance=ExtResource("3_p3dpm")]
-position = Vector2(5, 257)
+position = Vector2(10, 242)
+
+[node name="enemy1" parent="." instance=ExtResource("4_3uwgg")]
+position = Vector2(-224, -107)
+collision_mask = 2

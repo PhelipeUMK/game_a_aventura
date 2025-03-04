@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://ff6mbok1d8qi" path="res://assets/Sprite Pack 4/1 - Agent_Mike_Running (32 x 32).png" id="4_pwk0d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u8hqt"]
-size = Vector2(12, 12)
+size = Vector2(11, 14)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_33w5d"]
 atlas = ExtResource("2_rb21o")
@@ -97,24 +97,21 @@ animations = [{
 }]
 
 [node name="player" type="CharacterBody2D"]
-position = Vector2(3, 0)
 collision_mask = 2
 script = ExtResource("1_mydkl")
 
 [node name="collision" type="CollisionShape2D" parent="."]
-visible = false
-position = Vector2(1, -8)
+position = Vector2(-12, -1)
 shape = SubResource("RectangleShape2D_u8hqt")
 
 [node name="camera" type="Camera2D" parent="."]
-visible = false
 zoom = Vector2(1.8, 1.8)
 limit_left = -100
 limit_bottom = 320
 editor_draw_limits = true
 
 [node name="animation" type="AnimatedSprite2D" parent="."]
-position = Vector2(1, -16)
+position = Vector2(-13, -8)
 scale = Vector2(1, 0.96875)
 sprite_frames = SubResource("SpriteFrames_un632")
 animation = &"jump"
@@ -123,3 +120,8 @@ frame = 1
 frame_progress = 0.999559
 
 [node name="animator" type="AnimationPlayer" parent="."]
+
+[node name="bullet_position" type="Marker2D" parent="."]
+position = Vector2(2, 0)
+
+[node name="shoot_cooldown" type="Timer" parent="."]
