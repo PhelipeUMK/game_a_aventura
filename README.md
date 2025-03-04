@@ -10,7 +10,9 @@ Tanto o arquivo .exe quanto o o arquivo .pck devem estar na mesma pasta para o j
 Este jogo serve como demonstração das minhas capacidades de programação e da minha criatividade. Este é um projeto de portfólio e eu não dou permissão para replica-lo ou distribui-lo.
 
 ### Controles
-Utilize as setas do teclado da direita e da esquerda para movimentar o personagem, aperte a barra de espaço para fazer o personagem pular.
+Utilize as setas do teclado da direita e da esquerda para movimentar o personagem;
+Aperte a barra de espaço para fazer o personagem pular;
+Aperte a tecla F para atirar.
 
 ### Tecnologias 🛠
 Este jogo está sendo desenvolvido na engine de games Godot.
